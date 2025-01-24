@@ -1,6 +1,62 @@
 import "./hero.css";
 
 const Hero = () => {
-    return <div className="hero">Hero</div>;
+  return (
+    <div className="hero">
+      <div className="hSection left">
+        <h1 className="hTitle">
+          Hey There,
+          <br />
+          <span>Im Anurag!</span>
+        </h1>
+
+        {/* cv download button */}
+
+        {/* scroll svg */}
+
+        <a href="#services">
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15V9Z"
+              stroke="white"
+              strokeWidth="1"
+            />
+            <path
+              d="M12 5V8"
+              stroke="white"
+              strokeWidth="1"
+              strokeLinecap="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <div className="hSection right">
+        {/* FOLLOW */}
+
+        <div className="follow">
+          <a href="https://www.instagram.com/___mr._morningstar_/">
+            <img src="./instagram-50.png"></img>
+          </a>
+          <a href="https://x.com/anuragsaha9183">
+            <img src="./twitter-50.png"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/anurag-saha-26585b308/">
+            <img src="./linkedin-50.png"></img>
+          </a>
+          <a href="https://github.com/Anurag-Saha">
+            <img src="./github-50.png"></img>
+          </a>
+        </div>
+
+        {/* BUBBLE */}
+      </div>
+    </div>
+  );
 };
 export default Hero;
