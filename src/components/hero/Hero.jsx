@@ -1,21 +1,37 @@
+
 import "./hero.css";
 import Speech from "./Speech";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hSection left">
-        <h1 className="hTitle">
+        <motion.h1
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 45, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="hTitle"
+        >
           Hey There,
           <br />
           <span>I'm Anurag!</span>
-        </h1>
+        </motion.h1>
 
         {/* cv download button */}
 
         {/* scroll svg */}
 
-        <a href="#services" className="scroll">
+        <motion.a
+          animate={{ y: [0, 40], opacity: [0, 1,0] }}
+          transition={{
+            repeat: Infinity,
+            duration: 4,
+            ease: "easeInOut",
+          }}
+          href="#services"
+          className="scroll"
+        >
           <svg
             width="50px"
             height="50px"
@@ -23,19 +39,25 @@ const Hero = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
+            <path 
               d="M5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15V9Z"
               stroke="white"
               strokeWidth="1"
             />
-            <path
+            <motion.path
+              animate={{ y: [0, 0] }}
+              transition={{
+                repeat: Infinity,
+                duration: 4,
+                ease: "easeInOut"
+              }}
               d="M12 5V8"
               stroke="white"
               strokeWidth="1"
               strokeLinecap="round"
             />
           </svg>
-        </a>
+        </motion.a>
       </div>
       <div className="hSection right">
         {/* FOLLOW */}
@@ -103,6 +125,12 @@ const Hero = () => {
             </div>
           </div>
         </a>
+      </div>
+      <div className="bg">
+        {/* 3d */}
+        <div className="hImg">
+          <img src="hero.png" alt="" />
+        </div>
       </div>
     </div>
   );
