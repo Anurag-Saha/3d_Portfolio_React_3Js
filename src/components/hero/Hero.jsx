@@ -15,7 +15,7 @@ const Hero = () => {
 
         {/* scroll svg */}
 
-        <a href="#services">
+        <a href="#services" className="scroll">
           <svg
             width="50px"
             height="50px"
@@ -53,6 +53,9 @@ const Hero = () => {
           <a href="https://github.com/Anurag-Saha">
             <img src="./github-50.png"></img>
           </a>
+          <div className="followTextContainer">
+            <div className="followText">FOLLOW ME</div>
+          </div>
         </div>
 
         {/* BUBBLE */}
@@ -63,7 +66,7 @@ const Hero = () => {
         <div className="certificate">
           <img src="./icons8-react-native-50.png" />
           REACT <br />
-          Devloper
+          DEVLOPER
         </div>
         {/* CONTACT BUTTON */}
         <a href=" /#Contact" className="contactLink">
