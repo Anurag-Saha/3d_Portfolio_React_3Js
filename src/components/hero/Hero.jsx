@@ -111,8 +111,8 @@ const Hero = () => {
 
         <motion.div
           className="certificate"
-          animate={{ x: [0, -50], opacity: [0, 1] }}
-          transition={{ duration: 2 }}
+          animate={{  opacity: [0 , 1] }}
+          transition={{ duration: 5 }}
         >
           <img src="./icons8-react-native-50.png" />
           REACT <br />
