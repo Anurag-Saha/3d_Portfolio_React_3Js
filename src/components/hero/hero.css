@@ -18,7 +18,7 @@
   right: 0;
   left: 150px;
   margin: auto;
-  height: 80%;
+  height: 82%;
   width: max-content;
 }
 .hImg img{
@@ -147,4 +147,30 @@
   align-items: center;
   justify-content: center;
 }
- /* media quire 1hr:09min */
+ /* media quaries 1hr:09min */
+
+ @media (max-width:1536px){
+  .hTitle{
+    font-size: 72px;
+  }
+ }
+
+ @media (max-width:1280px){
+  .bg{
+    height: 80%;
+    top: auto;
+    bottom: 0;
+  }
+  .hImg{
+    height: 76%;
+  }
+  .bubbleContainer{
+    width: 90%;
+  }
+ }
+ @media (max-width:1024px){
+  .hTitle{
+    font-size: 72px; 
+  }
+ }
+ /* 1 hr 11 min */
