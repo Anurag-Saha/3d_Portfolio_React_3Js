@@ -1,13 +1,17 @@
-import { TypeAnimation } from 'react-type-animation';
-
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "motion/react";
 
 const Speech = () => {
   return (
-    <div className="bubbleContainer">
+    <motion.div
+      className="bubbleContainer"
+      animate={{ opacity: [0, 1] }}
+      transition={{ duration: 2,ease:"easeOut"}}
+    >
       <div className="bubble">
         <TypeAnimation
           sequence={[
-            1000, 
+            1000,
             "Hi i am a Frontend Devloper, 3D Artist and App Devloper",
             1000,
             "Highly motivated in 3d Animation and Frontend devlopment",
@@ -22,7 +26,7 @@ const Speech = () => {
         />
       </div>
       <img src="/man.png"></img>
-    </div>
+    </motion.div>
   );
 };
 export default Speech;
